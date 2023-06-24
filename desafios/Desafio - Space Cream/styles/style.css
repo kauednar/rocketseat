@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --fs-body:1.6rem;
+
+    --ff-heading: 'Staaatliches', sans-serif;
+    --ff-p: 'Palanquin', sans-serif;
+
+    --bg-primary: #8E9AAF;
+    --bg-secondary: #EFF1FF;
+    --bg-title: #CBC0D3;
+    --bg-card: #FEEAFA;
+    --fc-primary: #FFFFFF;
+    --fc-secondary: #4A4E69;
+}
