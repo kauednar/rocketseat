@@ -11,7 +11,7 @@
 :root {
     font-size: 62.5%;
     --fs-body:1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: 4.0rem;
 
     --ff-heading: 'Staaatliches', sans-serif;
     --ff-p: 'Palanquin', sans-serif;
@@ -23,3 +23,73 @@
     --fc-primary: #FFFFFF;
     --fc-secondary: #4A4E69;
 }
+
+.page {
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--bg-primary);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-body);
+
+    text-align: center;
+}
+
+.logo {
+    padding-top: 3.2rem;
+ 
+}
+
+h1 {
+    background-color: var(--bg-title);
+    margin: 4rem 0;
+    padding: 0.8rem 0;
+    
+
+    color: var(--fc-primary);
+    text-shadow: rgba(0, 0, 0, 0.411) 1px 1px 5px;
+}
+
+main {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
+p {
+    color: #23053A;
+    font-size: var(--fs-body);
+    font-family: var(--ff-p);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.cards {
+
+    position: relative;
+    padding-top: 6.3rem;
+
+}
+
+.cards h2 {
+    position: absolute;
+    bottom: 20.8rem;
+    left: 20.8rem;
+
+    border-radius: 20px;
+    background-color: var(--bg-card);
+    font-size: var(--fs-body);
+    font-family: var(--ff-heading);
+    color: var(--fc-secondary);
+    padding: 7px 20px;
+}
+
+
+
