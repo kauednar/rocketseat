@@ -34,18 +34,17 @@ header {
     font-size: var(--fs-body);
 
     text-align: center;
+    padding-bottom: 3.2rem;
 }
 
 .logo {
     padding-top: 3.2rem;
- 
 }
 
 h1 {
     background-color: var(--bg-title);
-    margin: 4rem 0;
     padding: 0.8rem 0;
-    
+    margin-top: 3.2rem;
 
     color: var(--fc-primary);
     text-shadow: rgba(0, 0, 0, 0.411) 1px 1px 5px;
@@ -65,7 +64,7 @@ p {
     text-align: center;
     line-height: 1.5rem;
 
-    padding-bottom: 6.3rem;
+    padding: 1.4rem 0 6.3rem;
 }
 
 .card img {
@@ -77,10 +76,13 @@ p {
 
 .cards {
     position: relative;
+
 }
 
 .cards img {
     padding-bottom: 3.2rem;
+
+    animation: downtop 800ms ease;
 }
 
 .cards h2 {
@@ -96,7 +98,34 @@ p {
     padding: 7px 20px;
 
     text-transform: uppercase;
+
+    animation: topdown 800ms ease;
 }
 
+img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
