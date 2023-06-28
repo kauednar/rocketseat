@@ -49,6 +49,8 @@ h1 {
 
     color: var(--fc-primary);
     text-shadow: rgba(0, 0, 0, 0.411) 1px 1px 5px;
+
+    text-transform: uppercase;
 }
 
 main {
@@ -62,6 +64,8 @@ p {
     font-family: var(--ff-p);
     text-align: center;
     line-height: 1.5rem;
+
+    padding-bottom: 6.3rem;
 }
 
 .card img {
@@ -72,16 +76,17 @@ p {
 }
 
 .cards {
-
     position: relative;
-    padding-top: 6.3rem;
+}
 
+.cards img {
+    padding-bottom: 3.2rem;
 }
 
 .cards h2 {
     position: absolute;
-    bottom: 20.8rem;
-    left: 20.8rem;
+    bottom: 5rem;
+    left: 19.5rem;
 
     border-radius: 20px;
     background-color: var(--bg-card);
@@ -89,6 +94,8 @@ p {
     font-family: var(--ff-heading);
     color: var(--fc-secondary);
     padding: 7px 20px;
+
+    text-transform: uppercase;
 }
 
 
