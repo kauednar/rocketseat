@@ -5,11 +5,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
     font-size: 62.5%;
     --fs-body:1.6rem;
+    --fs-heading: 4rem;
 
     --ff-heading: 'Staaatliches', sans-serif;
     --ff-p: 'Palanquin', sans-serif;
