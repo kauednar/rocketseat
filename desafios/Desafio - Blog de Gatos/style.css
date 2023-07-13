@@ -33,7 +33,7 @@ body {
 
 .container {
     padding: 1.6rem 3.4rem;
-    width: min(112rem,100%);
+    width: min(112rem, 100%);
     margin: 0 auto;
 }
 
@@ -170,26 +170,41 @@ footer p {
 
 @media (min-width: 930px) {
     .container {
-        display: grid;
-        grid-template-areas: 
-        "A"
-        "B C"
-        "D";
+        width: 100vw;
     }
 
-    header {
-        grid-area: A;
+    #app {
+        display: grid;
+        grid-template-rows: max-content 1 max-content;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        padding: 4rem;
     }
 
     #main {
-        grid-area: B;
+        max-width: 80rem;
+        margin: 0 4.4rem;
+    }
+
+    img {
+        max-width: 80.3rem;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100vw;
+        padding: 0px 11.4rem;
     }
 
     #sidebar {
-        grid-area: C;
-    }
+        display: flex;
+        align-items: start;
+        flex-direction: column;
 
-    footer {
-        grid-area: D;
+        max-width: 38.4rem;
     }
 }
