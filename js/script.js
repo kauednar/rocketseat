@@ -1,20 +1,13 @@
-alert("Vamos fazer um calculo!")
-let numberOne = prompt("Digite o primeiro numero")
-let numberTwo = prompt("Digite o segundo numero")
+alert('Vamos calcular a média do aluno')
 
-numberOne = Number(numberOne)
-numberTwo = Number(numberTwo)
+let name = prompt('Qual o nome do aluno?')
+let firstGrade = prompt('Qual a primeira nota?')
+let secondGrade = prompt('Qual a segunda nota?')
+let thirdGrade = prompt('Qual a terceira nota?')
 
-const sum = numberOne + numberTwo
-const sub = numberOne - numberTwo
-const multi = numberOne * numberTwo
-const div = numberOne / numberTwo
-const restDiv = numberOne % numberTwo
+firstGrade = Number(firstGrade)
+secondGrade = Number(secondGrade)
+thirdGrade = Number(thirdGrade)
 
-alert('Soma: ' + sum)
-alert('Subtação: ' + sub)
-alert('Multiplicação: ' + multi)
-alert('Divisão: ' + div)
-alert('Resto da Divisão: ' + restDiv)
-
+const average = ((firstGrade + secondGrade + thirdGrade) / 3)
 
