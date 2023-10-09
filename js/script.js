@@ -1,31 +1,40 @@
-let option
-let items = [];
+/* 
+  Crie uma lista de pacientes
 
-while(option != 3) {
-    option = Number(prompt(`
-    Olá usuario! Digite o numero da opção desejada
+  Cada paciente dentro da lista, deverá conter
+    nome
+    idade
+    peso
+    altura
 
-    1. Cadastrar um item na lista
-    2. Mostrar itens cadastrados
-    3. Sair do programa
-    `))
+  Escreva uma lista contendo o nome dos pacientes
+*/
 
-    switch(option) {
-        case 1:
-            let item = prompt("Digite o nome do item")
-            items.push(item)
-        break
-        case 2:
-            if(items.length == 0) {
-                alert("Não existem itens cadastrados")
-            } else {
-                alert(items) 
-            }
-        break
-        case 3:
-            alert("Programa encerrado")
-        break
-        default:
-            alert("Opção' invalida, tente novamente!")
+const patients = [
+    {
+    name: "Kauê",
+    age: 22,
+    weight: 93,
+    height: 1.76
+    },
+    {
+    name: "Isabelle",
+    age: 21,
+    weight: 66,
+    height: 1.66
+    },
+    {
+    name: "Caique",
+    age: 23,
+    weight: 96,
+    height: 1.79
     }
-}  
+]
+
+let patientsNames = []
+
+for(let index = 0; index < patients.length; index++){
+    patientsNames[index] = patients.name
+}
+
+alert(patientNames)
