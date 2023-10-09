@@ -1,7 +1,7 @@
 let option
 let items = [];
 
-while(option !=3) {
+while(option != 3) {
     option = Number(prompt(`
     Olá usuario! Digite o numero da opção desejada
 
@@ -10,7 +10,6 @@ while(option !=3) {
     3. Sair do programa
     `))
 
-
     switch(option) {
         case 1:
             let item = prompt("Digite o nome do item")
@@ -18,8 +17,8 @@ while(option !=3) {
         break
         case 2:
             if(items.length == 0) {
-                alert("Nãao existem itens cadastrados")
-            } else{
+                alert("Não existem itens cadastrados")
+            } else {
                 alert(items) 
             }
         break
@@ -27,6 +26,6 @@ while(option !=3) {
             alert("Programa encerrado")
         break
         default:
-            alert("Opção invalida, tente novamente!")
+            alert("Opção' invalida, tente novamente!")
     }
 }  
