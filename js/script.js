@@ -1,43 +1,29 @@
-/* 
-  Dada uma lista de pacientes, descubra o IMC de cada paciente e imprima
+alert("Vamos realizar calculos")
+let firstNumber = prompt("Insira um numero:")
+let secondNumber = prompt("Insira o segundo numero:")
 
-  "Paciente X possui o IMC de: Y"
+firstNumber = Number(firstNumber)
+secondNumber = Number(secondNumber)
 
-  Onde X é o nome do paciente e Y é o IMC desse paciente
+const sum = firstNumber + secondNumber
+const sub = firstNumber - secondNumber
+const multi = firstNumber * secondNumber
+const divs = firstNumber / secondNumber
+const restDiv = firstNumber % secondNumber
 
-  Crie uma função para fazer o cálculo de IMC
-*/
+const par = sum % 2
 
-/* peso / (altura * altura) */
+alert(`Resultados:
+Soma = ${sum}
+Subtração = ${sub}
+Multiplicação = ${multi}
+Divisão = ${divs}
+Resto da divisão = ${restDiv}
+`)
 
-const patients = [
-    {
-        name: "Kauê",
-        age: 22,
-        weight: 93,
-        height: 1.76
-    },
-    {
-      name: "Isabelle",
-      age: 21,
-      weight: 66,
-      height: 1.66
-    },
-    {
-      name: "Caique",
-      age: 23,
-      weight: 96,
-      height: 1.79
-    }
-]
-
-function printIMC(patient) {
-    return `
-        O paciente ${patient.name} possui o IMC de ${(patient.weight / (patient.height**2)).toFixed(2)}
-    `
+if (par == 0 ) {
+    alert("Numero par")
+} else {
+    alert("Numero Impar")
 }
 
-for (let patient of patients) {
-    let IMGmessage = printIMC(patient)
-    alert(IMGmessage)
-}
