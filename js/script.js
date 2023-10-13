@@ -1,29 +1,24 @@
-alert("Vamos realizar calculos")
-let firstNumber = prompt("Insira um numero:")
-let secondNumber = prompt("Insira o segundo numero:")
+let students = [
+    {
+        name: "Kauê",
+        firstScore: 10,
+        secondScore: 8
+    },
+    {
+        name: "Isabelle",
+        firstScore: 7,
+        secondScore: 8
+    },
+    {
+        name: "Juanzin",
+        firstScore: 5,
+        secondScore: 6
+    }
+]
 
-firstNumber = Number(firstNumber)
-secondNumber = Number(secondNumber)
-
-const sum = firstNumber + secondNumber
-const sub = firstNumber - secondNumber
-const multi = firstNumber * secondNumber
-const divs = firstNumber / secondNumber
-const restDiv = firstNumber % secondNumber
-
-const par = sum % 2
-
-alert(`Resultados:
-Soma = ${sum}
-Subtração = ${sub}
-Multiplicação = ${multi}
-Divisão = ${divs}
-Resto da divisão = ${restDiv}
-`)
-
-if (par == 0 ) {
-    alert("Numero par")
-} else {
-    alert("Numero Impar")
+() {
+    students[0].firstScore = students[0].secondScore / 2 
 }
 
+
+alert(`A média do(a) aluno ${students[0].name} é  ${students[0].firstScore}`)
