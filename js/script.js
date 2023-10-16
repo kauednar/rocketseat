@@ -16,9 +16,12 @@ let students = [
     }
 ]
 
-() {
-    students[0].firstScore = students[0].secondScore / 2 
+function mediaScore(student) {
+    return `A média do(a) aluno(a) ${student.name} é: ${((student.firstScore + student.secondScore) / 2)}
+    `
 }
 
-
-alert(`A média do(a) aluno ${students[0].name} é  ${students[0].firstScore}`)
+for (let student of students) {
+    let scoreMSG = mediaScore(student)
+    alert(scoreMSG)
+}
