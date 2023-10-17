@@ -17,11 +17,15 @@ let students = [
 ]
 
 function mediaScore(student) {
-    return `A média do(a) aluno(a) ${student.name} é: ${((student.firstScore + student.secondScore) / 2)}
-    `
+    return ((student.firstScore + student.secondScore) / 2)
 }
 
 for (let student of students) {
     let scoreMSG = mediaScore(student)
-    alert(scoreMSG)
+
+    if (mediaScore(student) > 7) {
+        alert(`A média do(a) aluno(a) ${student.name} é: ${scoreMSG} \nParabéns ${student.name} Você foi aprovado no curso!`)
+    } else {
+        alert(`A média do(a) aluno(a) ${student.name} é: ${scoreMSG} \nNão foi dessa vez ${student.name}! Tente novamente`)
+    }
 }
