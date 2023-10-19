@@ -31,6 +31,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 main h1 {
@@ -47,9 +48,16 @@ main p {
     color: rgba(52, 53, 91, 0.80);
 }
 
+.hide {
+    display: none;
+}
+
+/* screen1 */
+
+
 form {
     display: flex;
-    align-content: center;
+    justify-content: center;
 }
 
 button {
@@ -61,9 +69,17 @@ button {
     background: var(--iris-80, #7879F1);
     font-family: 'Montserrat', sans-serif;
     color: white;
+
+    cursor: pointer;
+
+    transition: background .3s;
 }
 
-#numb {
+button:hover {
+    background: var(--iris-80, #6666cc);
+}
+
+input {
     border-radius: 4px 0px 0px 4px;
     border: none;
     background: #DCE2E9;
@@ -71,4 +87,15 @@ button {
     height: 5.3rem;
     width: 5rem;
     text-decoration: none;
+}
+
+/* Screen 2 */
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+    border-radius: .4rem;
 }
