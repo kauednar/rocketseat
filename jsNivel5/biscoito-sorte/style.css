@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Montserrat:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --ff1: 'Montserrat', sans-serif;
+    --ff2: 'DM Sans', sans-serif;
+    --ff3: 'Dancing Script', cursive;
+    --fs1: 2.4rem;
+    --fs2: 2.4rem;
+    --cor1: #34355B;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--ff1);
+    font-size: var(--fs1);
+    color: var(--cor1);
+
+    text-align: center;
+
+    animation: color-change-2x 2s linear infinite alternate both;
+
+    height: 100vh;
+}
+
+main {
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+
+
+h1 {
+    margin: 4.8rem 8.4rem 0;
+}
+
+p {
+    font-family: var(--ff2);
+    font-size: var(--fs2);
+
+    margin-top: 1.4rem;
+}
+
+button {
+    border: none;
+    margin: 2.6rem 9rem 6rem;
+
+    cursor: pointer;
+}
+
+.screen1 button:hover {
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen2 p {
+    padding: 1.0rem;
+
+    font-family: var(--ff3);
+    font-size: 3.5rem;
+    max-width: 450px;
+
+    color: black;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.screen2 img {
+    margin-top: 6rem;
+    max-width: 300px;
+}
+
+.screen2 button {
+    margin-top: 7.5rem;
+    padding: 1.6rem;
+
+    border-radius: 4px;
+    background-color: #FF9500;
+    color: white;
+    font-family: var(--ff1);
+    font-size: 1.5rem;
+}
+
+.screen2 button:hover {
+    background-color: #ce7800;
+}
+
+@keyframes color-change-2x {
+    0% {
+      background: #190361;
+    }
+    100% {
+      background: #B0F;
+    }
+  }  
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+
+        transform: translate(-2px, 2px);
+    }
+    40% {
+
+        transform: translate(-2px, -2px);
+    }
+    60% {
+
+        transform: translate(2px, 2px);
+    }
+    80% {
+
+        transform: translate(2px, -2px);
+    }
+    100% {
+
+        transform: translate(0);
+    }
+  }
+
+@keyframes scale-in-bottom {
+    0% {
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+        opacity: 1;
+    }
+  }
