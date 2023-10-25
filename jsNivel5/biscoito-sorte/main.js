@@ -1,7 +1,7 @@
 const screen1 = document.querySelector(".screen1")
 const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
-const btnReset = document.querySelector("btnReset")
+const btnReset = document.querySelector("#btnReset")
 
 let randomCookie = Math.round(Math.random() * 10)
 
@@ -14,39 +14,41 @@ function toggleScreen() {
 }
 
 function handleTryClick(event) {
-    if(Number(randomCookie) == 1) {
+    event.preventDefault()
+
+    if(randomCookie == 1) {
         toggleScreen()
-    } else if(Number(randomCookie) == 2) {
+    } else if(randomCookie == 2) {
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem`
-    } else if(Number(randomCookie) == 3){
+        screen2.querySelector("p").innerText = `A vida trará coisas boas se tiver paciência`
+    } else if(randomCookie == 3){
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 2`
-    } else if(Number(randomCookie) == 4) {
+        screen2.querySelector("p").innerText = `Não compense na ira o que lhe falta na razão`
+    } else if(randomCookie == 4) {
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 3`
-    } else if(Number(randomCookie) == 5){
+        screen2.querySelector("p").innerText = `Defeitos e virtudes são apenas dois lados da mesma moeda`
+    } else if(randomCookie == 5){
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 4`
-    } else if(Number(randomCookie) == 6) {
+        screen2.querySelector("p").innerText = `A maior de todas as torres começa no solo`
+    } else if(randomCookie == 6) {
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem5`
-    } else if(Number(randomCookie) == 7){
+        screen2.querySelector("p").innerText = `Não há que ser forte. Há que ser flexível`
+    } else if(randomCookie == 7){
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 6`
-    } else if(Number(randomCookie) == 8) {
+        screen2.querySelector("p").innerText = `Siga os bons e aprenda com eles`
+    } else if(randomCookie == 8) {
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 7`
-    } else if(Number(randomCookie) == 9){
+        screen2.querySelector("p").innerText = `O bom-senso vale mais do que muito conhecimento.`
+    } else if(randomCookie == 9){
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 8`
+        screen2.querySelector("p").innerText = `Sem o fogo do entusiasmo, não há o calor da vitória`
     } else {
         toggleScreen()
-        screen2.querySelector("p").innerText = `Nova mensagem 9`
+        screen2.querySelector("p").innerText = `O riso é a menor distância entre duas pessoas`
     }
 }
 
 function handleResetClick() {
     toggleScreen()
-    randomNumber = Math.round(Math.random() * 10)
+    randomCookie = Math.round(Math.random() * 10)
 }
