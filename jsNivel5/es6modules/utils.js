@@ -1,0 +1,1 @@
+export default 'um texto qualquer'
