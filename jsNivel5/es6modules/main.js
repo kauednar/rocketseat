@@ -1,3 +1,3 @@
-import qualquerNome from './utils.js' 
+import funcaoPadrao, { date, greeting } from './utils.js'
 
-console.log(qualquerNome)
+funcaoPadrao('Kauê')
