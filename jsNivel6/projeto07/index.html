@@ -8,14 +8,14 @@
 <body>
     <nav>
         <a href="/" onclick="route()">Home</a>
-        <a href="/about" onclick="route()">Sobre</a>
+        <a href="/about" onclick="route()">About</a>
         <a href="/contact" onclick="route()">Contact</a>
-        <a href="/404" onclick="route()">ERROR 404</a>
+        <a href="/404" onclick="route()">404</a>
     </nav>
 
     <div id="app"></div>
 
-    <script>
+    <script src="js/index.js" type="module">
 
         const routes = {
             "/": "/pages/home.html",
@@ -28,16 +28,25 @@
             event = event || window.event
             event.preventDefault()
 
-            window.history.pushState({}, "", event.target)
+            window.history.pushState({}, "", event.target.href)
 
             handle()
         }
 
         function handle() {
             const { pathname } = window.location
-
-            console.log(pathname)
+            const route = routes[pathname] || routes[404]
+            console.log('antes do fetch')
+            fetch(route)
+            .then(data => data.text())
+            .then(html => {
+                document.querySelector('#app').innerHTML = html
+            })
         }
+
+        handle()
+
+        window.onpopstate = () => handle()
     </script>
 </body>
 </html>
